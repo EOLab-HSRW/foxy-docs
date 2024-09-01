@@ -1,3 +1,3 @@
 # Reversing the HUT
 
-![Duckiebot pinout]("./duckiebot-pinout.svg")
+![Duckiebot pinout](./duckiebot-pinout.svg)
