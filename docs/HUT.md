@@ -8,6 +8,7 @@ Components:
 - LEDs [PL9823](https://cdn.instructables.com/ORIG/FW0/YN1X/IHDUL683/FW0YN1XIHDUL683.pdf)
 - Motor driver [TB6612FNG](https://www.sparkfun.com/datasheets/Robotics/TB6612FNG.pdf)
 - "HUT" microcontroller [ATtiny861A](https://ww1.microchip.com/downloads/en/DeviceDoc/doc8197.pdf)
+- EEPROM [CAT24C32](https://www.onsemi.com/pdf/datasheet/cat24c32-d.pdf) address 0x50 on I2C.
 
 ![Duckiebot pinout](./duckiebot-pinout.svg)
 
