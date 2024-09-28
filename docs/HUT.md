@@ -11,4 +11,3 @@ Components:
 - EEPROM [CAT24C32](https://www.onsemi.com/pdf/datasheet/cat24c32-d.pdf) address 0x50 on I2C.
 
 ![Duckiebot pinout](./duckiebot-pinout.svg)
-
