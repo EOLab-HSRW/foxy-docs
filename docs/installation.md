@@ -1,6 +1,6 @@
 # Installation
 
-## Fresh Install
+## Fresh Install (ROS is not installed)
 
 1. Install the following system level packages:
 
@@ -37,7 +37,6 @@ The automation script allows using tags to execute only specific tasks, the avai
 - `developer`: setup everything to run the stack in the developer's computer.
 - `robot`: setup everything to run the stack in the robot's computer.
 - `tooling`: install some system level tools (e.g. tmux).
-- `vcs`: pull all external repositories.
 - `rosdep`: install all the packages dependencies.
 - `env`: set environment variables, aliases and more at the system level.
 - `ros`: install ros for you.
@@ -48,8 +47,8 @@ you can execute a single tag or a combination of multiple tags with the followin
 ansible-playbook local.yml --ask-become --tags "chosen_tag1, chosen_tag2, chosen_tag3"
 ```
 
-for example if you want to install all the dependencies run:
+for example if you want to install all the dependencies and the tooling run:
 
 ```sh
-ansible-playbook local.yml --ask-become --tags "rosdep, vcs"
+ansible-playbook local.yml --ask-become --tags "rosdep, tooling"
 ```
