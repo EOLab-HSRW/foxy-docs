@@ -1,6 +1,13 @@
 name: Deploy VitePress site to Pages
 
 on:
+  pull_request:
+    branches: main
+    paths:
+      - 'docs/**'
+      - '.vitepress/**'
+      - 'package.json'
+      - 'README.md'
   push:
     branches: [main]
     paths:
