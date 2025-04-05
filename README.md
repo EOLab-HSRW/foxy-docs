@@ -1,6 +1,6 @@
 # Foxy Robot
 
-> [!IMPORTANT
+> [!IMPORTANT]
 > Please note tha this project is currently under active construction, so it is reasonable to expect some problems and bugs (you can report them in [our github repo](https://github.com/EOLab-HSRW/foxy-robot/)). When it reaches a more mature and stable state this text will be removed.
 
 You can think of the **Foxy robot** as a reimagining of the [duckiebot](https://get.duckietown.com/products/duckiebot-db21) robot developed by [Duckietown](https://duckietown.com/). You may be wondering - why reimplement the robot? -, well the short answer is to fit the robot to a different need, but if you want to read the long answer check out the blog [Let's talk about Duckietown](https://wiki.eolab.de/doku.php?id=blog:lets-talk-about-duckietown).
