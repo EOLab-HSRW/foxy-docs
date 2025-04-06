@@ -4,8 +4,8 @@ If you've never done it before, setting up a working environment for a robot can
 
 ## 📋 Requirements
 
-- Operative system: [Ubuntu 22.04 Desktop](https://releases.ubuntu.com/jammy/)
-- Architecture: amd64 or arm64
+- **Operative system**: [Ubuntu 22.04 Desktop](https://releases.ubuntu.com/jammy/)
+- **Architecture**: amd64 or arm64
 
 The rationale behind these requirements:
 1. The world of robotics runs essentially on GNU/Linux based operating systems, so if you want to develop in the field what better than start using GNU/Linux?
