@@ -6,7 +6,15 @@ Start the robot container:
 a2s run foxy
 ```
 
-Inside the container launch a single robot simulation:
+Inside the container make sure to build the workspace:
+
+```sh
+cd ~/foxy_robot_ws
+colcon build --symlink-install
+source install/setup.bash
+```
+
+launch a single robot simulation:
 
 ```sh
 ros2 launch foxy_bringup single.launch.py
