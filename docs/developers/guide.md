@@ -5,8 +5,11 @@
 ## Manual Setup Software in Robot
 
 ```bash
-mkdir -p ~/foxy_ws/src/ && cd ~/foxy_ws/src
-git clone https://github.com/EOLab-HSRW/foxy-robot -b working-in-hardware
+sudo apt update
+source /opt/ros/humble/setup.bash
+rosdep update
+mkdir -p ~/foxy_ws/src && cd ~/foxy_ws/src
+git clone https://github.com/EOLab-HSRW/foxy-robot --depth 1
 cd ~/foxy_ws
 rosdep install -r -y --ignore-src \
   --from-paths $(colcon list --paths-only --packages-up-to foxy_bringup_hw)
