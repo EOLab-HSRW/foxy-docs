@@ -14,4 +14,4 @@ This reimplementation is born in the heart of the [EOLab (Earth Observation Lab)
 | CI                                                                                                   |
 |------------------------------------------------------------------------------------------------------|
 | ![Workflow Status](https://github.com/EOLab-HSRW/foxy-robot/actions/workflows/checks.yaml/badge.svg) |
-| ![Docs Deploy](https://github.com/EOLab-HSRW/foxy-robot/actions/workflows/deploy.yaml/badge.svg)     |
+| ![Docs Deploy](https://github.com/EOLab-HSRW/foxy-docs/actions/workflows/deploy.yaml/badge.svg)     |

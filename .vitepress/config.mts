@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Foxy Robot",
   description: "Documentation website for the open-source robot foxy-robot",
-  base: '/foxy-robot/',
+  base: '/foxy-docs/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // nav: [
