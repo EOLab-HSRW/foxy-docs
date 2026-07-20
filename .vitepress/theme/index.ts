@@ -4,6 +4,8 @@ import Steps from './components/Steps.vue'
 import Step from './components/Step.vue'
 import Troubleshooting from './components/Troubleshooting.vue'
 
+import './custom.css'
+
 export default {
   extends: DefaultTheme,
 
