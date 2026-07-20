@@ -55,8 +55,7 @@ Use a suitable microSD card adapter or external card reader when required.
 
 Wait until the operating system detects the card before continuing.
 
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The computer does not detect the microSD card
 
@@ -77,7 +76,7 @@ Make sure the switch is in the unlocked position before continuing.
 
 <!-- Add image: SD card adapter lock switch -->
 
-</details>
+</Troubleshooting>
 
 </Step>
 
@@ -98,8 +97,7 @@ Verify the target by checking its:
 
 ![Target selection](./robot-setup/select-target.jpg)
 
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The microSD card is not listed
 
@@ -118,9 +116,7 @@ Do not select a device until you can identify the microSD card safely.
 
 Compare the displayed capacity with the capacity printed on the card. When possible, disconnect unrelated USB storage devices before continuing.
 
-<!-- Add image: identifying the correct target -->
-
-</details>
+</Troubleshooting>
 
 </Step>
 
@@ -141,8 +137,7 @@ Wait until balenaEtcher confirms that the flash operation completed successfully
 
 ![Flashing completed](./robot-setup/flash-done.jpg)
 
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The flash operation does not start
 
@@ -182,9 +177,7 @@ Before interrupting the process, check whether:
 * Your computer is still responsive.
 * The microSD card or adapter was accidentally disconnected.
 
-<!-- Add image: failed flash or verification error -->
-
-</details>
+</Troubleshooting>
 
 </Step>
 
@@ -197,8 +190,7 @@ Wait until the operating system confirms that the card can be removed safely, th
 > [!IMPORTANT]
 > Do not remove the card while it is still being written, verified, or used by another application.
 
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The card cannot be ejected
 
@@ -217,9 +209,7 @@ This is expected after flashing the Foxy system image.
 
 Do not format or modify the new partitions, even if your operating system reports that some of them cannot be read.
 
-<!-- Add image: operating-system partition warning -->
-
-</details>
+</Troubleshooting>
 
 </Step>
 
@@ -233,10 +223,7 @@ Insert the flashed microSD card gently until it is seated correctly.
 
 Do not force the card into the slot.
 
-<!-- Add image: microSD card slot and correct orientation -->
-
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The microSD card does not fit
 
@@ -255,9 +242,7 @@ Some card slots use a push-to-lock mechanism.
 
 Insert the card gently until you feel or hear it click into place.
 
-<!-- Add image: card fully inserted -->
-
-</details>
+</Troubleshooting>
 
 </Step>
 
@@ -275,8 +260,7 @@ The side battery button is the robot's power-on control.
 
 <!-- Add image: side battery button and top user button -->
 
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The robot does not power on
 
@@ -304,7 +288,7 @@ If the robot still does not start:
 
 <!-- Add image: robot power indicators -->
 
-</details>
+</Troubleshooting>
 
 </Step>
 
@@ -340,8 +324,7 @@ Make sure that:
 
 The first startup may take several minutes.
 
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The robot is still starting
 
@@ -362,7 +345,7 @@ If necessary, reflash the microSD card.
 
 <!-- Add image: normal startup indicators -->
 
-</details>
+</Troubleshooting>
 
 </Step>
 
@@ -375,10 +358,7 @@ Connect the other end of the cable to a USB port on your computer.
 > [!TIP]
 > Some micro-USB cables provide power only and cannot transfer data. Use another cable if the setup tool cannot detect the robot.
 
-<!-- Add image: robot micro-USB connection -->
-
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The computer does not detect the robot
 
@@ -400,7 +380,7 @@ When uncertain, use a cable that is known to support file transfer with another 
 
 <!-- Add image: robot detected as USB device -->
 
-</details>
+</Troubleshooting>
 
 </Step>
 
@@ -412,8 +392,7 @@ Follow the browser prompts to allow the website to connect to the robot.
 
 ![Foxy Web Setup](./robot-setup/foxy-web-setup.jpg)
 
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The browser does not show the robot
 
@@ -444,7 +423,7 @@ Try the following:
 
 <!-- Add image: browser USB permission dialog -->
 
-</details>
+</Troubleshooting>
 
 </Step>
 
@@ -468,8 +447,7 @@ foxy-navigation
 
 Avoid spaces, uppercase letters, underscores, and other special characters.
 
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The hostname is rejected
 
@@ -500,7 +478,7 @@ If the configuration has already been applied, reconnect to Foxy Web Setup and u
 
 <!-- Add image: hostname validation message -->
 
-</details>
+</Troubleshooting>
 
 </Step>
 
@@ -519,8 +497,7 @@ Before continuing, verify that:
 
 <!-- Add image: Wi-Fi configuration -->
 
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The Wi-Fi network is not listed
 
@@ -553,7 +530,7 @@ Ask the network administrator whether the robot can connect directly or whether 
 
 <!-- Add image: Wi-Fi connection error -->
 
-</details>
+</Troubleshooting>
 
 </Step>
 
@@ -568,8 +545,7 @@ Wait for the robot to complete the reboot before disconnecting the micro-USB cab
 > [!CAUTION]
 > Do not use the battery button as a normal software shutdown control. Use the reboot or shutdown option provided by the system whenever possible.
 
-<details>
-<summary>Troubleshooting</summary>
+<Troubleshooting>
 
 ### The reboot command does not respond
 
@@ -598,9 +574,7 @@ Check that:
 
 Reconnect the micro-USB cable and open Foxy Web Setup again if the robot remains unavailable.
 
-<!-- Add image: reboot confirmation -->
-
-</details>
+</Troubleshooting>
 
 </Step>
 
