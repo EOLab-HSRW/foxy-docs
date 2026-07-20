@@ -38,7 +38,7 @@ In balenaEtcher, select **Flash from URL**.
 Paste the following image URL:
 
 ```text
-https://hochschule-rhein-waal.sciebo.de/public.php/dav/files/QNbFNq5J9gonyxn
+https://hochschule-rhein-waal.sciebo.de/public.php/dav/files/drB7RpdDq9C7edC
 ```
 
 Confirm the URL and wait while balenaEtcher loads the image.
