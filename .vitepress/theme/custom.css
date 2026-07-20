@@ -1,0 +1,172 @@
+/* --------------------------------------------------------------------------
+ * EOLab brand theme
+ * Core brand color: #2980B9
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* Brand palette */
+  --eolab-blue: #2980b9;
+  --eolab-blue-dark: #2471a3;
+  --eolab-blue-darker: #1f618d;
+  --eolab-blue-light: #5dade2;
+  --eolab-blue-lighter: #85c1e9;
+
+  /*
+   * Light mode
+   *
+   * The slightly darker variants are used for links and buttons so that
+   * they remain readable against white backgrounds.
+   */
+  --vp-c-brand-1: #2471a3;
+  --vp-c-brand-2: #2176aa;
+  --vp-c-brand-3: #1f618d;
+  --vp-c-brand-soft: rgba(41, 128, 185, 0.14);
+
+  /* Replace VitePress's purple "important" color */
+  --vp-c-important-1: var(--vp-c-brand-1);
+  --vp-c-important-2: var(--vp-c-brand-2);
+  --vp-c-important-3: var(--vp-c-brand-3);
+  --vp-c-important-soft: var(--vp-c-brand-soft);
+
+  /* Home-page hero */
+  --vp-home-hero-name-color: #2980b9;
+  --vp-home-hero-name-background: none;
+
+  /*
+   * A single-color EOLab glow instead of the default purple/blue gradient.
+   * This is visible when the hero has an image.
+   */
+  --vp-home-hero-image-background-image:
+    radial-gradient(
+      circle,
+      rgba(41, 128, 185, 0.24) 0%,
+      rgba(41, 128, 185, 0) 70%
+    );
+  --vp-home-hero-image-filter: blur(48px);
+
+  /* Primary CTA buttons */
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #2471a3;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #2b7db0;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: #1f618d;
+}
+
+/* --------------------------------------------------------------------------
+ * Dark mode
+ * -------------------------------------------------------------------------- */
+
+.dark {
+  /*
+   * Lighter blues provide better visibility against dark backgrounds.
+   */
+  --vp-c-brand-1: #85c1e9;
+  --vp-c-brand-2: #5dade2;
+  --vp-c-brand-3: #2980b9;
+  --vp-c-brand-soft: rgba(93, 173, 226, 0.18);
+
+  --vp-c-important-1: var(--vp-c-brand-1);
+  --vp-c-important-2: var(--vp-c-brand-2);
+  --vp-c-important-3: var(--vp-c-brand-3);
+  --vp-c-important-soft: var(--vp-c-brand-soft);
+
+  --vp-home-hero-name-color: #5dade2;
+  --vp-home-hero-name-background: none;
+
+  --vp-home-hero-image-background-image:
+    radial-gradient(
+      circle,
+      rgba(93, 173, 226, 0.2) 0%,
+      rgba(93, 173, 226, 0) 70%
+    );
+
+  /* Keep white CTA text readable in dark mode */
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #2471a3;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #2b7db0;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: #1f618d;
+}
+
+.setup-card,
+.setup-card:hover,
+.setup-card:focus,
+.setup-card:active,
+.setup-card:visited {
+  color: var(--vp-c-text-1);
+  text-decoration: none !important;
+}
+
+.setup-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.setup-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 220px;
+  padding: 24px;
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.setup-card:hover {
+  color: var(--vp-c-text-1);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: var(--vp-shadow-2);
+  transform: translateY(-2px);
+}
+
+.setup-card-step {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  color: var(--vp-c-brand-1);
+  font-size: 14px;
+  font-weight: 700;
+  background: var(--vp-c-brand-soft);
+  border-radius: 50%;
+}
+
+.setup-card-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.setup-card strong {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.setup-card > span:last-child {
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .setup-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .setup-card {
+    min-height: auto;
+  }
+}

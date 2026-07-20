@@ -5,19 +5,21 @@ export default defineConfig({
   title: "Foxy Robot",
   description: "Documentation website for the open-source robot foxy-robot",
   base: '/foxy-docs/',
+  cleanUrls: true,
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    // nav: [
-    //   { text: 'Home', link: '/README' },
-    //   { text: 'Documentation', link: '/README' }
-    // ],
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Documentation', link: '/README' }
+    ],
 
     sidebar: [
       {
-        text: 'Start Up',
+        text: 'Getting Started',
         items: [
-          { text: 'Installation', link: '/docs/installation' },
-          { text: 'Getting Started', link: '/docs/getting-started' },
+          { text: 'Assembly', link: '/assembly' },
+          { text: 'Robot Setup', link: '/robot-setup' },
+          { text: 'User Setup', link: '/user-setup' },
+          { text: 'System Overview', link: '/system-overview' },
         ]
       },
       {
@@ -50,7 +52,4 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/EOLab-HSRW/foxy-robot' }
     ]
   },
-  rewrites: {
-    'README.md': 'index.md',
-  }
 })
